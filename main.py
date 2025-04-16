@@ -1,17 +1,15 @@
 def main():
     total = 0
-    numbers = [0] * 5
     i = 0
 
-    while i < len(numbers):
-        numbers[i] = int(input('Enter a value: '))
+    while i < 5:
+        num = int(input('Enter your input: '))
+        total += num
         i += 1
 
-    total = sum(numbers)
-    print(total)
+    print("The total is:", total)
 
-    # Do not delete the return statement
-    return total, numbers
+    return total
 
 
 if __name__ == '__main__':
